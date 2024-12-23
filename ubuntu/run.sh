@@ -82,6 +82,7 @@ if test -f /etc/lsb-release; then
     done < /etc/lsb-release
 else
     echo "/etc/lsb-release file not found."
+    exit 1
 fi
 
 # Check the distribution release version
